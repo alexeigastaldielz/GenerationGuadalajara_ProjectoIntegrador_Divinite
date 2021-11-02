@@ -1,0 +1,484 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background: #fa4299;
+  color: #fff;
+}
+html, body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+.wrapper{
+  grid-template-rows: 60px auto;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+.navbarr{
+  grid-row: 1;
+  background:black;
+  display: grid; 
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  margin: 0;
+}
+.content{
+  grid-row: 2;
+  display: grid; 
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+/* /////////////// */
+
+
+
+.borde{
+  border: 3px black solid;
+}
+
+.cover {
+  height: 100vh;
+  width: 100%;
+}
+
+.parallax {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.cover__logo {
+ /* position: absolute;
+  text-align: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  z-index: 4;*/
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+  width: 50%;
+  height: 15%;
+  color: rgb(252, 237, 237);
+  z-index: 4;
+
+}
+
+.parallax__container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+.cover video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+  background: #000;
+  
+}
+
+/* .wrapper {
+  position: relative;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+} */
+
+.espacioado-texto{
+  margin: 1em 0;
+}
+
+.espaciado-card-izq{
+  padding-left: 0;
+  padding-right: 5%;
+}
+.espacioado-card-der{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+}
+.imagen-circulo{
+  background: none;
+  border-radius: 50%;
+}
+
+.box{    
+  transition: transform 300ms, box-shadow 300ms;
+  border: none;
+}
+
+/*animacion cartas Ivar*/
+.animado{
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarArriba{
+  animation: mostrarArriba 1s;
+}
+@keyframes mostrarArriba{
+0%{
+  transform: translateX(-60px);
+}
+100%{
+  transform: translateX(0);
+}
+}
+/*animacion cartas Ivar*/
+
+
+/*animacion boton Luis*/
+.btnanimado{
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarArriba1{
+  animation: mostrarArriba 1s;
+}
+@keyframes mostrarArriba{
+0%{
+  transform: translateX(-60px);
+}
+100%{
+  transform: translateX(0);
+}
+}
+
+.btnanimado a{
+  color: white;
+}
+
+/*animacion boton Luis*/
+
+
+.image--overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 62, 63, 0.6);
+  color: #FCA9B4;
+  display: flex;
+  /*FUENTE*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.image--overlay:hover{
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.image--title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.punto-vista{
+  min-height: 50vh;
+  width: 100%;
+}
+
+
+/*.letters{
+	animation: jsLetter 4s 1;
+}
+
+.logo{
+	animation: logoAnimation 3s 3s 1;
+}
+
+@keyframes jsLetter{
+  0%{ 
+		color: red;		
+    transform: rotate(0deg); 
+  }
+  100%{
+		color: white;		
+    transform: rotate(360deg);		
+  } 
+}
+@keyframes logoAnimation{
+  0%{ 
+		color: black;		
+    transform: scale(0); 
+  }
+	100%{ 
+		color: yellow;		
+    transform: scale(1);
+  } 
+}*/
+
+
+/*Btn flotante*/
+.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #FD5060; 
+  border: 0;
+  border-radius: 45px;
+  margin: 20px;
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #AA3053; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #FD5060; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-sample .badge { 
+  color: #FD5060; 
+  background-color: #FFFFFF; 
+}
+/*Btn flotante*/
+
+
+/*continer bootstrap prueba luis*/
+.figuritas69 {
+  font-size: 70px;
+
+}
+
+.figuritas69 :hover{
+  color: #AA3053;
+}
+
+.redesLink{
+  color: #AA3053;
+}
+
+.horarioServ0{ 
+  padding: 15%;
+  font-family: Century Gothic;
+}
+
+.horarioServ{ 
+  font-family: Century Gothic;
+}
+
+.conocenosText{
+  font-size: 300%;
+  text-align: center;
+}
+
+.mapita{
+  position: relative;
+  display: block;
+  margin-top: 5%;
+}
+
+.btnCrearCuenta a{
+  color: white;
+}
+
+
+/*continer bootstrap prueba luis*/
+
+/*Footer Luis*/
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+.footer{
+  display: webkit flex;
+  display: moz flex;
+  display: ms flex;
+  display: o flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background: #000;
+  font-family: 'Lora', serif;
+  margin-top: 0px;
+}
+.footer > *{
+  flex: 1 100%;
+}
+
+.titulosDebajo{
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li{
+  line-height: 2em;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.r-footer{
+  display: webkit flex;
+  display: moz flex;
+  display: ms flex;
+  display: o flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.r-footer > *{
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.tresCosas h2{
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 600px){
+  .r-footer > *{
+    flex: 1;
+  }
+  .features{
+    flex-grow: 2;
+  }
+  .r-footer{
+    flex: 2 0px;
+  }
+}
+/*Footer Luis*/
+
+/* CODIGO ALEXEI IMAGENES */
+.s21{
+  margin: auto;
+  position: relative;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid #AA3053;
+}
+.imagenspace21 img{
+  position: relative;
+  height: 18rem;
+  width: 18rem;
+  bottom: 20px;
+  margin: auto;
+  left: 20px;
+  z-index: -5;
+}
+
+.s22{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid #FDAAB5;
+}
+.imagenspace22 img{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  top: 20px;
+  left: 20px;
+  z-index: -5;
+}
+
+.s23{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid #AA3053;
+}
+.imagenspace23 img{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  bottom: 20px;
+  right: 25px;
+  z-index: -5;
+}
+
+.s24{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  border: 3px solid #FD5060;
+}
+.imagenspace24 img{
+  position: relative;
+  margin: auto;
+  height: 18rem;
+  width: 18rem;
+  bottom: -20px;
+  right: 25px;
+  z-index: -5;
+}
+
+
+
+
+

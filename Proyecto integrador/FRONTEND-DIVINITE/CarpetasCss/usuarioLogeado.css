@@ -1,0 +1,117 @@
+
+/*Foto de perfil*/
+
+.profile-pic-div{
+  margin-top: 15vh;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+  display: block;
+}
+
+#photo{
+  height: 100%;
+  width: 100%;
+}
+
+#file{
+  display: none;
+}
+
+#uploadBtn{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+/*Foto de perfil*/
+
+
+.form-control{
+  margin: 10px;
+}
+
+main{ /*Esto tambien ayuda al footer*/
+  min-height: 77vh;
+}
+
+.tituloPerfil{
+  text-align: center;
+  color: black;
+  display: block;
+}
+
+.formulaCentrada{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.parentDiv{
+  margin-top: -7%;
+
+}
+
+.serviciosFav{
+  float: left;
+  display: block;
+}
+
+.botonGuardar{
+  background-color: #FD5060;
+  color: white;
+  padding: 0.25rem 4.75rem;
+  border: none;
+  margin-top: 5%;
+}
+.botonGuardar:hover{
+  background-color: #AA3053;
+}
+
+/*Checked Buttons*/
+.botonesCont{
+  margin-top: 7%;
+  display: block;
+
+}
+
+.btn-outline-danger{
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/*Checked Buttons*/
+
+
+/*Footer Luis Responsivo*/
+
+footer{
+  color: white;
+  background-color: black;
+  font-family: Century Gothic;
+  text-align: center;
+  padding: 1%;
+  margin-top: auto;
+}
+
+footer a{
+  color: white;
+}
+/*Footer Luis Responsivo*/

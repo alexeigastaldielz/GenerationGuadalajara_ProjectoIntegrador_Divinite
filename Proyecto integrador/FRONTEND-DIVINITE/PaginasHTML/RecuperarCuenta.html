@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIVINITE - RecuperarCuenta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CarpetasCss/RecuperarCuenta.css" type="text/css">
+    <link rel="stylesheet" href="/CarpetasCss/navbar.css">
+    <link rel="stylesheet" href="/CarpetasCss/footer.css">
+    <link rel="shortcut icon" href="/images/logo/image2.png">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/409f561447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="/CarpetasCss/Contacto.css"> -->
+    <!-- <link rel="stylesheet" href="/CarpetasCss/PaginaDeInicio.css">  -->
+    <!-- <link rel="stylesheet" href="/CarpetasCss/Contacto.scss"> -->
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+
+</head>
+<body>
+  <div class="grid">
+<!-- ingresar codigo de navbar  -->
+
+ <!--Navbar!-->
+ <div class="navbarr">
+  <header class="headerr">
+    <div class="headerr-top">
+      <div class="LogoEmpresa">
+        <a href="/PaginasHTML/PaginaDeInicio.html">
+          <div class="p1">DIVINITE</div>
+          <div class="p2">BEAUTY SPA</div>
+        </a>
+      </div>
+      <!--LogoEmpresa -->
+      <div class="n3">
+        <div class="navr-links2 bag">
+          <a class="active" href="/PaginasHTML/ServiciosReservados.html"><i class="fas fa-shopping-bag"> 
+            <span class=" top-0 start-100 translate-middle badge rounded-pill " style=" background-color: rgb(241, 164, 231);">
+          </span></i></a>
+          <span></span>
+          <a class="active" href="usuarioLogeado.html"><i class="fas fa-user-circle"></i></a>
+          <span></span>
+        </div>
+        <!--nav-links2 -->
+        <div class="headerr-btn"><i class="fas fa-bars"></i></a></div>
+      </div>
+    </div>
+    <!--n3 -->
+    <nav class="headerr-menu">
+      <ul>
+        <li><a href="/PaginasHTML/PaginaDeInicio.html">Inico</a></li>
+        <li><a href="/PaginasHTML/Nosotros.html">Nosotros</a></li>
+        <li><a href="/PaginasHTML/Servicios.html">Servicios</a></li>
+        <li><a href="/PaginasHTML/Contacto.html">Contacto</a></li>
+        <li><a href="/PaginasHTML/Ingreso.HTML">Ingresar / Cerrar sesion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    const header_btn = document.querySelector('.headerr-btn')
+    const header_menu = document.querySelector('.headerr-menu')
+    header_btn.addEventListener('click', () => {
+      if (header_menu.style.display != 'block') {
+        header_menu.style.display = 'block'
+        header_btn.innerHTML = '<i class="fas fa-times"></i>'
+      } else {
+        header_menu.style.display = 'none'
+        header_btn.innerHTML = '<i class="fas fa-bars"></i>'
+      }
+    })
+  </script>
+</div><!-- navbar -->
+<!--End Navbar!-->
+  
+  <!-- codigo de login -->
+  <div class="content">
+  <div class="box1">
+    <div class="logo"></a><img src="/images/logo/image2.png" alt=""></a></div>
+  </div><!-- box1 -->
+  <div class="box2">
+    <a>Recuperar contraseña</a>
+  </div><!-- box2 -->
+  <div class="box3">
+    <a>Te enviaremos un link a tu correo electronico, abre el correo en tu bandeja de entrada y selecciona el link para recuperar tu cuenta.</a>
+  </div><!-- box3 -->
+  <div class="box4 field">
+    <input type="text" placeholder="Correo con el que creo la cuenta" required> 
+  </div><!-- box4 -->
+  <div class="box5">
+    <button class="btn-layer" type="submit" >Recuperar cuenta</button>
+  </div><!-- box5 -->
+  <div class="space">
+
+  </div>
+</div><!-- content -->
+  <!-- ingresar codigo del contact -->
+  <div class="footer">
+    <div class="foo1">
+    <div class="foo2">
+      <i class="fas fa-phone"></i>
+      <p> 83-8888-8888 </p>
+    </div><!-- foo2 -->
+    <div class="foo3">
+      <i class="fab fa-whatsapp"></i>
+      <p>  (+52) 81-4566-7890</p>
+    </div><!-- foo3 -->
+    <div class="foo4">
+      <i class="fas fa-envelope"></i>
+      <p> email@divinite.com</p>
+    </div><!-- foo4 --></div><!-- foo1 -->
+    <div class="foo5">
+    <div class="foo6">
+      <a href="Contacto.html"> Buzon de sugerencias</a>
+    </div><!-- foo6 -->
+    <div class="foo7">
+      <p>(c) DIVINITE Guadalajara</p>
+    </div><!-- foo7 -->
+    <div class="foo8">
+      <a href="AvisoDePrivasidad.html"> Politica de Privacidad </a>
+      <span></span>
+      <p>  |  </p>
+      <span></span>
+      <a href="Contacto.html"> FAQs </a>
+    </div><!-- foo8 --></div><!-- foo5 -->
+  </div><!-- footer -->
+    </div><!-- grid -->
+  </body>
+  </html>
